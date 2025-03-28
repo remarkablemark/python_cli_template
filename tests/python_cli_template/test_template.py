@@ -1,4 +1,4 @@
-from python_cli_template.template import hello
+from python_cli_template import hello
 
 
 def test_hello():
