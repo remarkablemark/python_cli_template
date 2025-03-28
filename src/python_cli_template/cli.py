@@ -11,7 +11,7 @@ def main(argv: list[str] = None) -> None:
         "--version",
         "-v",
         action="version",
-        version=f"%(prog)s {__version__}",
+        version=__version__,
     )
 
     parser.add_argument(
