@@ -17,15 +17,15 @@ Pull requests are welcome! By participating in this project, you agree to abide 
 
 ## Fork
 
-[Fork](https://github.com/remarkablemark/python_package_template/fork) and then clone the repository:
+[Fork](https://github.com/remarkablemark/python_cli_template/fork) and then clone the repository:
 
 ```sh
 # replace <USER> with your username
-git clone git@github.com:<USER>/python_package_template.git
+git clone git@github.com:<USER>/python_cli_template.git
 ```
 
 ```sh
-cd python_package_template
+cd python_cli_template
 ```
 
 ## Install
@@ -80,13 +80,13 @@ Write a commit message that follows the [Conventional Commits](https://www.conve
 - **ci**: Updates configuration files and scripts for continuous integration
 - **docs**: Documentation only changes
 
-Push to your fork and create a [pull request](https://github.com/remarkablemark/python_package_template/compare/).
+Push to your fork and create a [pull request](https://github.com/remarkablemark/python_cli_template/compare/).
 
 At this point, wait for us to review your pull request. We'll try to review pull requests within 1-3 business days. We may suggest changes, improvements, and/or alternatives.
 
 Things that will improve the chance that your pull request will be accepted:
 
-- [ ] Write tests that pass [CI](https://github.com/remarkablemark/python_package_template/actions/workflows/test.yml).
+- [ ] Write tests that pass [CI](https://github.com/remarkablemark/python_cli_template/actions/workflows/test.yml).
 - [ ] Write solid documentation.
 - [ ] Write a good [commit message](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#commit).
 
@@ -141,7 +141,7 @@ twine upload --repository testpypi dist/*
 Install the package:
 
 ```sh
-pip install --index-url https://test.pypi.org/simple/ --no-deps python_package_template
+pip install --index-url https://test.pypi.org/simple/ --no-deps python_cli_template
 ```
 
 ## Release
