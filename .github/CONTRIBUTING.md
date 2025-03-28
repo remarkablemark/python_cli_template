@@ -98,7 +98,23 @@ Run the tests:
 pytest
 ```
 
-Install the package with `pipx`:
+Run the tests with [coverage](https://coverage.readthedocs.io/):
+
+```sh
+coverage run -m pytest
+```
+
+Generate a coverage report:
+
+```sh
+coverage report
+```
+
+```sh
+coverage html
+```
+
+Install the package with [pipx](https://pipx.pypa.io/):
 
 ```sh
 pipx install .
