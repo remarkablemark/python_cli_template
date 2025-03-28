@@ -98,6 +98,18 @@ Run the tests:
 pytest
 ```
 
+Install the package with `pipx`:
+
+```sh
+pipx install .
+```
+
+Test the command:
+
+```sh
+python_cli_template --help
+```
+
 ## Lint
 
 Update pre-commit hooks to the latest version:
