@@ -172,6 +172,12 @@ Install the package:
 pip install --index-url https://test.pypi.org/simple/ --no-deps python_cli_template
 ```
 
+Generate [docs](https://pdoc.dev/):
+
+```sh
+pdoc src/python_cli_template/
+```
+
 ## Release
 
 Release and publish are automated with [Release Please](https://github.com/googleapis/release-please).

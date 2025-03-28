@@ -1,4 +1,8 @@
-"""Python CLI Template"""
+"""
+Python CLI Template
+
+.. include:: ../../README.md
+"""
 
 from .template import hello
 

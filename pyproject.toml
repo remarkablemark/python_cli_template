@@ -24,6 +24,7 @@ python_cli_template = "python_cli_template.cli:main"
 [project.optional-dependencies]
 build = [
     "build==1.2.2.post1",
+    "pdoc==15.0.1",
     "twine==6.1.0",
 ]
 test = [
