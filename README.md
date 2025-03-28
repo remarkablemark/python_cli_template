@@ -6,22 +6,25 @@
 
 🐍 Python CLI Template
 
+## Prerequisites
+
+- [Python](https://www.python.org/)
+- [pipx](https://pipx.pypa.io/)
+
 ## Install
 
 [Python](https://pypi.org/project/python_cli_template/):
 
 ```sh
-pip install python_cli_template
+pipx install python_cli_template
 ```
 
 ## Usage
 
 Print greeting:
 
-```py
-from python_cli_template import template
-
-print(template.hello())
+```sh
+python_cli_template --name world
 ```
 
 ## License

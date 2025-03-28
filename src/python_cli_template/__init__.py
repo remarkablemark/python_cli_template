@@ -1,3 +1,3 @@
-"""Python Package Template"""
+"""Python CLI Template"""
 
 __version__ = "0.0.0"
