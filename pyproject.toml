@@ -1,0 +1,36 @@
+[project]
+name = "python_package_template"
+authors = [
+    { name="Mark", email="mark@remarkablemark.org" },
+]
+description = "Python Package Template"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+dynamic = ["version"]
+dependencies = []
+
+[project.optional-dependencies]
+build = [
+    "build==1.2.2.post1",
+    "twine==6.1.0",
+]
+test = [
+    "black==25.1.0",
+    "isort==6.0.1",
+    "pre-commit==4.2.0",
+    "pytest==8.3.5",
+    "ruff==0.11.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/remarkablemark/python_package_template"
+Issues = "https://github.com/remarkablemark/python_package_template/issues"
+
+[tool.black]
+fast = true
