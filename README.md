@@ -21,10 +21,22 @@ pipx install python_cli_template
 
 ## Usage
 
-Print greeting:
+Greet name:
 
 ```sh
 python_cli_template --name world
+```
+
+Check version:
+
+```sh
+python_cli_template --version
+```
+
+See help:
+
+```sh
+python_cli_template --help
 ```
 
 ## License
