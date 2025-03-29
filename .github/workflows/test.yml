@@ -43,20 +43,16 @@ jobs:
           cache: pip
           python-version: 3
 
-      - name: Install package
-        run: pipx install .
-
       - name: Check version
         run: |
-          set -e
+          pipx install .
           version=$(grep version src/python_cli_template/__init__.py | cut -d'"' -f 2)
-          [[ $(python -m python_cli_template --version) == $version ]]
-          [[ $(python -m python_cli_template -v) == $version ]]
+          set -e
           [[ $(python_cli_template --version) == $version ]]
           [[ $(python_cli_template -v) == $version ]]
 
       - name: Get help
-        run: python_cli_template --help
+        run: python -m python_cli_template --help
 
       - name: Execute CLI
-        run: python_cli_template --name test
+        run: python -m python_cli_template --name test
