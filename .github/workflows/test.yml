@@ -45,11 +45,10 @@ jobs:
 
       - name: Check version
         run: |
-          pipx install .
           version=$(grep version src/python_cli_template/__init__.py | cut -d'"' -f 2)
           set -e
-          [[ $(python_cli_template --version) == $version ]]
-          [[ $(python_cli_template -v) == $version ]]
+          [[ $(python -m python_cli_template --version) == $version ]]
+          [[ $(python -m python_cli_template -v) == $version ]]
 
       - name: Get help
         run: python -m python_cli_template --help
