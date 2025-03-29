@@ -154,7 +154,7 @@ ruff format
 
 ## Build
 
-Generate distribution packages:
+Generate the distribution packages:
 
 ```sh
 python3 -m build
@@ -172,7 +172,13 @@ Install the package:
 pip install --index-url https://test.pypi.org/simple/ --no-deps python_cli_template
 ```
 
-Generate [docs](https://pdoc.dev/):
+Bundle the package with [PyInstaller](https://pyinstaller.org/):
+
+```sh
+pyinstaller src/python_cli_template/cli.py --name python_cli_template
+```
+
+Generate the docs with [pdoc](https://pdoc.dev/):
 
 ```sh
 pdoc src/python_cli_template/
