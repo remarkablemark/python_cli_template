@@ -17,11 +17,8 @@ jobs:
           cache: pip
           python-version: 3
 
-      - name: Install dependencies
-        run: pip install -e .[build]
-
-      - name: Generate packages
-        run: python3 -m build
+      - name: Install pdoc
+        run: pip install pdoc
 
       - name: Build docs
         run: pdoc src/python_cli_template/ -o docs

@@ -43,6 +43,12 @@ jobs:
           cache: pip
           python-version: 3
 
+      - name: Install build
+        run: pip install build
+
+      - name: Build package
+        run: python -m build
+
       - name: Install package
         run: pipx install .
 
