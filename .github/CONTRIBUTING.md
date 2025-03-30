@@ -9,6 +9,7 @@
 - [Test](#test)
 - [Lint](#lint)
 - [Build](#build)
+- [Docs](#docs)
 - [Release](#release)
 
 </details>
@@ -51,8 +52,7 @@ source .venv/bin/activate
 Install the dependencies:
 
 ```sh
-pip install -e '.[build]'
-pip install -e '.[test]'
+pip install -e '.[lint]'
 ```
 
 Install pre-commit into your git hooks:
@@ -63,11 +63,7 @@ pre-commit install
 
 ## Develop
 
-Make your changes, add tests/documentation, and ensure tests pass:
-
-```sh
-pytest
-```
+Make your changes, add tests/documentation, and ensure [tests](#test) pass.
 
 Write a commit message that follows the [Conventional Commits](https://www.conventionalcommits.org/) specification:
 
@@ -91,6 +87,12 @@ Things that will improve the chance that your pull request will be accepted:
 - [ ] Write a good [commit message](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#commit).
 
 ## Test
+
+Install the dependencies:
+
+```sh
+pip install -e '.[test]'
+```
 
 Run the tests:
 
@@ -128,6 +130,12 @@ python_cli_template --help
 
 ## Lint
 
+Install the dependencies:
+
+```sh
+pip install -e '.[lint]'
+```
+
 Update pre-commit hooks to the latest version:
 
 ```sh
@@ -154,6 +162,12 @@ ruff format
 
 ## Build
 
+Install the dependencies:
+
+```sh
+pip install -e '.[build]'
+```
+
 Generate the distribution packages:
 
 ```sh
@@ -176,6 +190,14 @@ Bundle the package with [PyInstaller](https://pyinstaller.org/):
 
 ```sh
 pyinstaller src/python_cli_template/cli.py --name python_cli_template
+```
+
+## Docs
+
+Install the dependencies:
+
+```sh
+pip install -e '.[docs]'
 ```
 
 Generate the docs with [pdoc](https://pdoc.dev/):

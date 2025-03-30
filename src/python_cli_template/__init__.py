@@ -1,6 +1,4 @@
 """
-Python CLI Template
-
 .. include:: ../../README.md
 """
 

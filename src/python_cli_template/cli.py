@@ -1,7 +1,6 @@
 from argparse import ArgumentParser
 
-from python_cli_template import __version__
-from python_cli_template.template import hello
+from python_cli_template import __version__, hello
 
 
 def main(argv: list[str] = None) -> None:

@@ -6,6 +6,14 @@
 
 🐍 Python CLI Template
 
+## Quick Start
+
+Greet name:
+
+```sh
+pipx run python_cli_template --name world
+```
+
 ## Prerequisites
 
 - [Python](https://www.python.org/)
@@ -19,24 +27,39 @@
 pipx install python_cli_template
 ```
 
-## Usage
+## CLI
+
+### `--name`
+
+**Optional**: Name to greet. Defaults to `World`.
+
+```sh
+python_cli_template --name Alex
+```
+
+### `--version`
+
+Show program's version number and exit:
+
+```sh
+python_cli_template --version # python_cli_template -v
+```
+
+Show help message and exit:
+
+```sh
+python_cli_template --help # python_cli_template -h
+```
+
+## Package
 
 Greet name:
 
-```sh
-python_cli_template --name world
-```
+```py
+# script.py
+from python_cli_template import hello
 
-Check version:
-
-```sh
-python_cli_template --version
-```
-
-See help:
-
-```sh
-python_cli_template --help
+print(hello("Bob"))
 ```
 
 ## License
