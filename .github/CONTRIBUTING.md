@@ -119,7 +119,7 @@ coverage html
 Install the package with [pipx](https://pipx.pypa.io/):
 
 ```sh
-pipx install .
+pipx install . --force
 ```
 
 Test the command:
