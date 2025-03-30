@@ -8,7 +8,7 @@
 
 ## Quick Start
 
-Greet name:
+Greet a name:
 
 ```sh
 pipx run python_cli_template --name world
@@ -19,15 +19,13 @@ pipx run python_cli_template --name world
 - [Python](https://www.python.org/)
 - [pipx](https://pipx.pypa.io/)
 
-## Install
+## CLI
 
-[Python](https://pypi.org/project/python_cli_template/):
+Install the CLI:
 
 ```sh
 pipx install python_cli_template
 ```
-
-## CLI
 
 ### `--name`
 
@@ -39,27 +37,51 @@ python_cli_template --name Alex
 
 ### `--version`
 
-Show program's version number and exit:
+Show the program's version number and exit:
 
 ```sh
 python_cli_template --version # python_cli_template -v
 ```
 
-Show help message and exit:
+Show the help message and exit:
 
 ```sh
 python_cli_template --help # python_cli_template -h
 ```
 
-## Package
+## Script
 
-Greet name:
+Create a virtual environment:
+
+```sh
+python3 -m venv .venv
+```
+
+Activate the virtual environment:
+
+```sh
+source .venv/bin/activate
+```
+
+Install the package:
+
+```sh
+pip install python_cli_template
+```
+
+Greet a name:
 
 ```py
 # script.py
 from python_cli_template import hello
 
 print(hello("Bob"))
+```
+
+Run the script:
+
+```sh
+python script.py
 ```
 
 ## License
